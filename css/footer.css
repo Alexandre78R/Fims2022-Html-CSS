@@ -1,0 +1,45 @@
+/* Background du footer */
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(59, 59, 60);
+    height: auto;
+    width: 100%;
+    padding-top: 5px;
+    color: #fff;
+}
+
+/* A l'intérrieur du footer */
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-menu{
+    float: right;
+}
+  
+.footer-menu ul{
+    display: flex;
+}
+  
+.footer-menu ul li{
+  padding-right: 10px;
+  display: block;
+}
+  
+.footer-menu ul li a{
+    color: white;
+    font-family :'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    text-decoration: none;
+}
+  
+.footer-menu ul li a:hover{
+    color: rgb(87, 167, 237);
+}
+ 
