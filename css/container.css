@@ -20,6 +20,6 @@ body {
 
 .container_app {
     margin: 25px;
-    /* position: static; */
-    display :inline-flex;
+    display: flex;
+    flex-wrap: wrap;
 }
