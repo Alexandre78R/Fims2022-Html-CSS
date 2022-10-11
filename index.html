@@ -6,37 +6,168 @@
     <link rel="icon" href="./images/icon.png" />
     <!-- Import du css de la navBar -->
     <link rel="stylesheet" href="./css/navBar.css">
-    <!-- Import du css de flickity pour le carrousel -->
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-        <!-- Import du css du carrousel -->
+    <!-- Import de la librairie (css) de flickity pour le carrousel -->
+    <link rel="stylesheet" href="./css/libs/flickity.min.css">
+    <!-- Import du css du carrousel -->
     <link rel="stylesheet" href="./css/carrousel.css">
-
+    <!-- Import du css de container -->
+    <link rel="stylesheet" href="./css/container.css">
+    <!-- Import du css des cartes -->
+    <link rel="stylesheet" href="./css/card.css">
     <!-- Import du css du footer -->
     <link rel="stylesheet" href="./css/footer.css">
-    <title>Film 2022 - Home</title>
+    <!-- Titre de la page -->
+    <title>Film 2022 - Acceuil</title>
 </head>
 <body>
     <!-- Nav Bar -->
-    <nav id="navBar">
-        <a id="logo" class="nav-link" href="#">Film 2022</a>
-        <a class="nav-link" href="#">Home</a>
-        <a class="nav-link" href="#">FAQ</a>
-        <a class="nav-link" href="#">Contact</a>
+    <header>
+        <nav id="navBar">
+            <a id="logo" class="nav-link" href="#">Film 2022</a>
+            <a class="nav-link" href="#">Acceuil</a>
+            <a class="nav-link" href="#">FAQ</a>
+            <a class="nav-link" href="#">Contact</a>
 
-        <a id="about" class="nav-link" href="#">About Me</a>
-     </nav>
+            <a id="about" class="nav-link" href="#">Connexion</a>
+        </nav>
 
-    <!-- Carrousel -->
-    <div class="block-Carrousel">
-        <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
-            <img class="gallery-cell" src="./images/slide-film/the-batman.jpg">
-            <img class="gallery-cell" src="./images/slide-film/top-gun-slide.jpg">
-            <img class="gallery-cell" src="./images/slide-film/doctor-strange.jpg">
-            <img class="gallery-cell" src="./images/slide-film/one-piece-red.jpg">
-            <img class="gallery-cell" src="./images/slide-film/fantastic-beasts-3.jpg">
-            <img class="gallery-cell" src="./images/slide-film/uncharted.jpg">
+        <!-- Carrousel -->
+        <div class="block-Carrousel">
+            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <img class="gallery-cell" src="./images/slide-film/the-batman.jpg">
+                <img class="gallery-cell" src="./images/slide-film/top-gun-slide.jpg">
+                <img class="gallery-cell" src="./images/slide-film/doctor-strange.jpg">
+                <img class="gallery-cell" src="./images/slide-film/one-piece-red.jpg">
+                <img class="gallery-cell" src="./images/slide-film/fantastic-beasts-3.jpg">
+            </div>
         </div>
-    </div>
+    </header>
+
+    <section>
+        <div class="container_app">
+            <aside class="card">
+                
+                <header>
+                <img src="./images/slide-film/the-batman.jpg">
+                </header>
+    
+                <div class="card-bio">
+                    <p>Dans sa deuxième année de lutte contre le crime, le milliardaire et justicier masqué Batman explore la corruption qui sévit à Gotham et notamment comment elle pourrait être liée à sa propre famille, les Wayne, à qui il doit toute sa fortune. En parallèle, il enquête sur les meurtres d'un tueur en série qui se fait connaître sous le nom de Sphinx et sème des énigmes cruelles sur son passage.</p>
+                    <h5>Note : </h5>
+                    <ul>
+                        <li><a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=211012.html">AlloCiné</a></li>
+                        <li><a href="https://www.senscritique.com/film/the_batman/8466396">SensCritique</a></li>
+                        <li><a href="https://www.premiere.fr/film/The-Batman">CinéSéries</a></li>
+                    </ul>
+                </div>
+            
+                <ul class="card-social-links">
+            
+                <li>
+                    <a href="#">
+                        <p>Source</p>
+                    </a> 
+                </li>
+            </aside>  
+            <aside class="card">
+                
+                <header>
+                <img src="./images/slide-film/top-gun-slide.jpg">
+                </header>
+    
+                <div class="card-bio">
+                    <p>Après plus de 30 ans de service en tant que l'un des meilleurs aviateurs de la Marine, Pete Maverick Mitchell est à sa place, repoussant les limites en tant que pilote d'essai courageux et esquivant l'avancement de grade qui le mettrait à la terre.</p>
+                    <h5>Note : </h5>
+                    <ul>
+                        <li><a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=186636.html">AlloCiné</a></li>
+                        <li><a href="https://www.senscritique.com/film/top_gun_maverick/critique/270585716">SensCritique</a></li>
+                        <li><a href="#">CinéSéries</a></li>
+                    </ul>
+                </div>
+            
+                <ul class="card-social-links">
+            
+                <li>
+                    <a href="#">
+                        <p>Source</p>
+                    </a> 
+                </li>
+            </aside>  
+            <aside class="card">
+                
+                <header>
+                <img src="./images/slide-film/doctor-strange.jpg">
+                </header>
+    
+                <div class="card-bio">
+                    <p>Le Docteur Stephen Strange continue ses recherches sur la Pierre du Temps. Cependant, un vieil ami devenu ennemi tente de détruire tous les sorciers de la Terre, ce qui perturbe le plan de Strange.</p>
+                    <h5>Note : </h5>
+                    <ul>
+                        <li><a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=251390.html">AlloCiné</a></li>
+                        <li><a href="https://www.cineserie.com/movies/2298598/">SensCritique</a></li>
+                        <li><a href="https://www.senscritique.com/film/doctor_strange_in_the_multiverse_of_madness/23302273">CinéSéries</a></li>
+                    </ul>
+                </div>
+            
+                <ul class="card-social-links">
+            
+                <li>
+                    <a href="#">
+                        <p>Source</p>
+                    </a> 
+                </li>
+            </aside>  
+            <aside class="card">
+                
+                <header>
+                <img src="./images/slide-film/one-piece-red.jpg">
+                </header>
+    
+                <div class="card-bio">
+                    <p>Luffy et son équipage s'apprêtent à assister à un festival de musique attendu avec impatience. La chanteuse la plus populaire du monde, Uta, va monter sur scène pour la première fois. Celle qui n'est autre que la fille du légendaire pirate Shanks Le Roux va révéler la puissance exceptionnelle de sa voix qui pourrait bien changer le monde.</p>
+                    <h5>Note : </h5>
+                    <ul>
+                        <li><a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=298674.html">AlloCiné</a></li>
+                        <li><a href="https://www.cineserie.com/movies/4713262/">SensCritique</a></li>
+                        <li><a href="#">CinéSéries</a></li>
+                    </ul>
+                </div>
+            
+                <ul class="card-social-links">
+            
+                <li>
+                    <a href="#">
+                        <p>Source</p>
+                    </a> 
+                </li>
+            </aside>  
+
+            <aside class="card">
+                
+                <header>
+                <img src="./images/slide-film/fantastic-beasts-3.jpg">
+                </header>
+    
+                <div class="card-bio">
+                    <p> Le professeur Albus Dumbledore sait que le puissant sorcier noir Gellert Grindelwald cherche à prendre le contrôle du monde des sorciers. Incapable de l'arrêter seul, il confie à Newt Scamander, magizoologiste, le soin de diriger une équipe intrépide de sorciers et de sorcières.</p>
+                    <h5>Note : </h5>
+                    <ul>
+                        <li><a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=228087.html">AlloCiné</a></li>
+                        <li><a href="https://www.senscritique.com/film/les_animaux_fantastiques_les_secrets_de_dumbledore/critique/159541412">SensCritique</a></li>
+                        <li><a href="#">CinéSéries</a></li>
+                    </ul>
+                </div>
+            
+                <ul class="card-social-links">
+            
+                <li>
+                    <a href="#">
+                        <p>Source</p>
+                    </a> 
+                </li>
+            </aside>  
+          </div>
+    </section>
     <!-- Footer -->
     <footer>
         <div class="footer-content">
@@ -44,15 +175,17 @@
             <a href="https://github.com/Alexandre78R" target="_blank"><img class="social-img" src="./images/github.png" alt="Github"/></a>
              <div class="footer-menu">
                 <ul class="f-menu">
-                   <li><a href="">Home</a></li>
-                   <li><a href="">About</a></li>
+                   <li><a href="">Acceuil</a></li>
+                   <li><a href="">FAQ</a></li>
                    <li><a href="">Contact</a></li>
-                   <li><a href="">Blog</a></li>
+                   <li><a href="">Connexion</a></li>
+                   <li><a href="">Inscription</a></li>
                 </ul>
                </div>
         </div>
     </footer>
+
 </body>
-    <!-- Import du js de flickity pour le carrousel -->
-<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!-- Import de la librairie (js) de flickity pour le carrousel -->
+<script src="./js/libs/flickity.pkgd.min.js"></script>
 </html>

@@ -1,18 +1,12 @@
 
-html, body {
-	height: 100%;
-	margin: 0; padding: 0;
-}
-body {
-	display : table;
-	width: 100%;
-}
-
 /* Background du footer */
 footer{
-    display : table-row;
-	height: 100px; /* à titre d'exemple */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     /* Maintenir le footer en bas */
+    display: block;
     background: rgb(59, 59, 60);
     /* height: auto; */
     width: 100%;
@@ -60,4 +54,3 @@ footer{
     max-width : 50px;
     max-height : 25px;
 }
-

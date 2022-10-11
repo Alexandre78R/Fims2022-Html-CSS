@@ -2,7 +2,7 @@
     /* fond de bar à 100% */
     width: 100%;
     /* Position de la barre toute en haut */
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     /* Coleur de la barre  */
