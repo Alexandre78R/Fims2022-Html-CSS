@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="./css/container.css">
     <!-- Import du css des from -->
     <link rel="stylesheet" href="./css/from.css">
+    <!-- Import du css des Tab -->
+    <link rel="stylesheet" href="./css/tab.css">
     <!-- Import du css du footer -->
     <link rel="stylesheet" href="./css/footer.css">
     <!-- Titre de la page -->
@@ -38,8 +40,7 @@
                 </div>
             </div>
         </nav>
-
-        <!-- Carrousel -->
+            <!-- Carrousel -->
         <div class="block-Carrousel">
             <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
                 <img class="gallery-cell" src="./images/slide-film/the-batman.jpg">
@@ -56,34 +57,19 @@
 
     <section>
         <div class="container_app_Contact">
-            <form id="contact_form" action="/contact.html">
+            <form id="contact_form" action="/pannel-add-faq.html">
                 <div class="structure-contact">
-                    <label>Nom</label><br />
-                    <input id="lastname" name="lastname" type="text" placeholder="Nom" size="30" /><br />
-                    <span id="lastname_validation"></span>
+                    <label>Question</label><br />
+                    <input id="quest" name="quest" type="text" placeholder="Question à ajouté ?" size="30" /><br />
+                    <span id="quest_validation"></span>
                 </div>
                 <div class="structure-contact">
-                    <label>Prénom</label><br />
-                    <input id="firstname" name="firstname" type="text" placeholder="Prénom" size="30" /><br />
-                    <span id="firstname_validation"></span>
-                </div>
-                <div class="structure-contact">
-                    <label>Adresse email</label><br />
-                    <input id="email" class="input" name="email" type="text" placeholder="Email" size="30" /><br />
-                    <span id="email_validation"></span>
-                </div>
-                <div class="structure-contact">
-                    <label>Votre question ?</label><br />
-                    <input id="object" class="input" name="object" type="text" placeholder="Votre question ?" size="30" /><br />
-                    <span id="object_validation"></span>
-                </div>
-                <div class="structure-contact">
-                    <label>Message</label><br />
-                    <textarea id="message" class="input" name="message" placeholder="Message" rows="15" cols="30"></textarea><br />
-                    <span id="message_validation"></span>
+                    <label>Réponse</label><br />
+                    <textarea id="answer" class="input" name="answer" placeholder="Réponse" rows="15" cols="30"></textarea><br />
+                    <span id="answer_validation"></span>
                 </div>
                 <div class="structure-button-contact">
-                    <input id="submit_button" class="button-contact" type="submit" value="Envoyer"/>
+                    <input id="submit_button" class="button-contact" type="submit" value="Ajouter"/>
                 </div>
               </form>
         </div>
