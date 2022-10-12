@@ -1,7 +1,6 @@
 /* Format de la card  */
 .card {
     height: 200px;
-    /* margin: 20px auto; */
     width: 320px;
     overflow: hidden;
 }
@@ -10,7 +9,8 @@
 /* Format  card header */
 .card header {
     padding: 1px;
-    height: 200px;
+    height: 190px;
+    width: 100%;
 }
 
 /* Format header card img*/
@@ -22,9 +22,9 @@
 
 /*  Positionnement  de la card bio*/
 .card .card-bio {
-    padding: 20px;
+    padding: 25px;
     position: sticky;
-    opacity: 0;
+    /* opacity: 0; */
 }
 
 /* Format d'écriture dans card-bio pour les balise P */
@@ -73,6 +73,7 @@
 
 .card:hover {
     height: 100%;
+    width: 30%;
     background-color: rgba(252, 252, 252, 0.863);
 }
 
