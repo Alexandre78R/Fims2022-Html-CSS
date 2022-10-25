@@ -56,45 +56,53 @@
         </div>
     </header>
 
-    <section>
+    <main>
         <div class="container_app_Contact">
             <form id="contact_form" action="/pannel-add-faq.html">
                 <div class="structure-contact">
-                    <label>Image</label><br />
-                    <input id="img" name="img" type="text" placeholder="https://exemple.com" size="30" /><br />
-                    <span id="img_validation"></span>
-                </div>
-                <div class="structure-contact">
-                    <label>AlloCiné</label><br />
-                    <input id="alloCine" name="alloCine" type="text" placeholder="https://exemple.com" size="30" /><br />
-                    <span id="alloCine_validation"></span>
-                </div>
-                <div class="structure-contact">
-                    <label>SensCritique</label><br />
-                    <input id="senscritique" name="senscritique" type="text" placeholder="https://exemple.com" size="30" /><br />
-                    <span id="senscritique_validation"></span>
+                    <label id="testJS">Nom</label><br />
+                        <input id="name" name="name" type="text" placeholder="Nom" size="30" /><br />
+                    <span id="name_validation"></span>
                 </div>
                 <div class="structure-contact">
                     <label>Image</label><br />
-                    <input id="img" name="quest" type="text" placeholder="https://exemple.com" size="30" /><br />
-                    <span id="img_validation"></span>
+                        <input id="file" name="file" type="file" onchange="return valid_image()"/><br />
+                </div>
+                <div class="checkbox-structure">
+                    <label class="checkbox-text">AlloCiné</label>
+                    <input type="checkbox" class="radio" id="checkbox_allocine">
+                    <label for="checkbox_allocine"></label>
+                    <input id="checkbox_allocine_hidden" type="hidden" value="">
+                    <label class="checkbox-text">SensCritique</label>
+                    <input type="checkbox" class="radio" id="checkbox_sensCritique">
+                    <label for="checkbox_sensCritique"></label>
+                    <input id="checkbox_senscritique_hidden" type="hidden" value="">
+                </div>
+                <div class="checkbox-structure">
+                    <label class="checkbox-text">CinéSéries</label>
+                    <input type="checkbox" class="radio" id="checkbox_cineSeries">
+                    <label for="checkbox_cineSeries"></label>
+                    <input id="checkbox_cineSeries_hidden" type="hidden" value="">
+                </div>
+                <div id="url_active_allocine" class="structure-contact"></div>
+                <div id="url_active_sensCritique" class="structure-contact"></div>
+                <div id="url_active_cineSeries" class="structure-contact"></div>
+                <div class="structure-contact">
+                    <label>Source</label><br />
+                        <input id="url_source" name="url_source" type="text" placeholder="https://exemple.com" size="30" /><br />
+                    <span id="url_source_validation"></span>
                 </div>
                 <div class="structure-contact">
-                    <label>Question</label><br />
-                    <input id="quest" name="quest" type="text" placeholder="Question à ajouté ?" size="30" /><br />
-                    <span id="quest_validation"></span>
-                </div>
-                <div class="structure-contact">
-                    <label>Texte</label><br />
-                    <textarea id="text" class="input" name="text" placeholder="Texte" rows="15" cols="30"></textarea><br />
-                    <span id="text_validation"></span>
+                    <label>Description</label><br />
+                        <textarea id="descriptions" name="descriptions" class="input" placeholder="descriptions" rows="15" cols="30"></textarea><br />
+                    <span id="descriptions_validation"></span>
                 </div>
                 <div class="structure-button-contact">
-                    <input id="submit_button" class="button-contact" type="submit" value="Modifier"/>
+                    <input id="submit_button" class="button-contact" type="submit" value="Ajouter"/>
                 </div>
               </form>
         </div>
-    </section>
+    </main>
     
     <!-- Footer -->
     <footer>
